@@ -85,6 +85,7 @@ class ExpensesTracker(QMainWindow):
         ''')
         self.connection.commit()
 
+
     def load_data(self):
         cursor = self.connection.cursor()
         cursor.execute("SELECT * FROM expenses")
